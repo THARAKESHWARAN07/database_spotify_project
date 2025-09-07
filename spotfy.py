@@ -8,9 +8,9 @@ import mysql.connector
 
 #set up client credentials
 sp=spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(
-    client_id='68eee8b1de4149318dc54d7c10cf0265', #clinetID
+    client_id='replace with your client id', #clinetID
 
-    client_secret='89cbb43d96c04a87a2553ee6b358d7fb' #clientsecrectkey
+    client_secret='replace with  your client secret' #clientsecrectkey
 ))
 
 db_config={'host': 'localhost',  'user':'root' ,'password': 'root','database': 'spotify_db'}
@@ -71,4 +71,5 @@ plt.bar(features,values,color='yellow')
 plt.title(f"track popularity '{track_data['track']}'")
 plt.ylabel('value')
 plt.show()
+
 
